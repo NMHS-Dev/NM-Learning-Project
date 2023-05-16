@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
@@ -2026,7 +2026,7 @@
 }
 
 /*!
- * Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
@@ -2049,7 +2049,7 @@
 }
 
 /*!
- * Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
@@ -2093,7 +2093,7 @@
 }
 
 /*!
- * Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
@@ -4911,20 +4911,8 @@
   font-weight: 400;
 }
 
-:root, :host {
-  --fa-style-family-brands: "Font Awesome 4 Compatibility";
-  --fa-font-brands: normal 400 1em/1 "Font Awesome 4 Compatibility";
-}
-
-@font-face {
-  font-family: "Font Awesome 4 Compatibility";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("[[font:core|fa-v4compatibility.woff2]]") format("woff2"), url("[[font:core|fa-v4compatibility.ttf]]") format("truetype");
-}
 /*!
- * Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
@@ -25046,11 +25034,6 @@ h3.sectionname .inplaceeditable.inplaceeditingon .editinstructions {
   display: block;
 }
 
-ul {
-  padding-left: 1rem;
-  -webkit-margin-start: 0.2rem; /* stylelint-disable-line */
-}
-
 /* YUI 2 Tree View */
 /*rtl:raw:
 .ygtvtn,
@@ -28455,6 +28438,10 @@ span.editinstructions .alert-link {
   font-weight: 700;
 }
 
+.coursebox .content .coursefile {
+  max-width: 100px;
+}
+
 .coursebox .content .courseimage img {
   max-width: 100px;
   max-height: 100px;
@@ -31371,6 +31358,7 @@ body.path-question-type .form-group .col-form-label.sr-only:not(legend):not([for
 .que span.qno {
   font-size: 1.5em;
   font-weight: bold;
+  word-break: break-word;
 }
 
 .que .info > div {
@@ -33735,7 +33723,8 @@ img.userpicture {
   width: 30px;
   border-radius: 3px;
   border: 0;
-  overflow: visible;
+  overflow: hidden;
+  white-space: nowrap;
   margin: 0 6px 6px 0;
 }
 .path-mod-quiz #mod_quiz_navblock span.qnbutton {
@@ -34956,6 +34945,9 @@ p.arrow_button {
 /**
  * Grader report.
  */
+.path-grade-report-grader .gradeparent {
+  z-index: 5;
+}
 .path-grade-report-grader .gradeparent tr .cell,
 .path-grade-report-grader .gradeparent .floater .cell {
   background-color: #fff;
@@ -37675,7 +37667,7 @@ div.editor_atto_toolbar button .icon {
   margin-bottom: 25px;
 }
 .tertiary-navigation .row {
-  column-gap: 20px;
+  column-gap: 10px;
 }
 .tertiary-navigation .tertiary-navigation-selector .dropdown-toggle {
   padding: 0;
@@ -37686,10 +37678,18 @@ div.editor_atto_toolbar button .icon {
 .tertiary-navigation .navitem-divider:not(:last-child) {
   margin-right: 20px;
 }
+.tertiary-navigation .btn > div {
+  max-width: 200px;
+}
 
 @media (max-width: 767.98px) {
   .tertiary-navigation .mform {
     padding-left: initial;
+  }
+}
+@media (max-width: 575.98px) {
+  .tertiary-navigation .page-toggler > p {
+    font-size: 80%;
   }
 }
 @media print {
@@ -37731,6 +37731,84 @@ div.editor_atto_toolbar button .icon {
 }
 .popover-process-monitor .queue-process:last-child {
   border-bottom: 0;
+}
+
+.moodlenet-share-dialog {
+  min-height: 500px;
+}
+.moodlenet-share-dialog .modal-header .moodlenet-share-moodlenetinfo {
+  align-items: baseline;
+}
+.moodlenet-share-dialog .modal-header .moodlenet-share-moodlenetinfo .moodlenet-logo {
+  display: flex;
+}
+.moodlenet-share-dialog .modal-header .moodlenet-share-moodlenetinfo .moodlenet-logo .icon {
+  width: auto;
+  height: 1.3rem;
+}
+.moodlenet-share-dialog .modal-header .moodlenet-share-moodlenetinfo .moodlenet-title {
+  display: flex;
+  padding-left: 0.5em;
+}
+.moodlenet-share-dialog .modal-header.no-border {
+  border-bottom: none;
+}
+.moodlenet-share-dialog .modal-header.no-header-text .moodlenet-share-moodlenetinfo .moodlenet-title {
+  display: none;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-activity-info {
+  border-radius: 0.5rem;
+  color: #1d2125;
+  background-color: #f5f9fc;
+  border-color: #3584c9;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.6em 1.5em;
+  margin-bottom: 1rem;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-activity-info hr {
+  border-top-color: #3077b5;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-activity-info .alert-link {
+  color: #070808;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-activity-info .moodlenet-share-activity-info-hr {
+  border-bottom: 1px solid #dee2e6;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-activity-info .moodlenet-activity-type,
+.moodlenet-share-dialog .modal-body .moodlenet-share-activity-info .moodlenet-activity-name {
+  display: block;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-notice {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-modal-content .loading-icon .icon {
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-modal-content .moodlenet-circle-status {
+  height: 18rem;
+  margin: auto;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-modal-content .moodlenet-circle-status.success {
+  background: radial-gradient(circle, rgba(25, 143, 81, 0.1) 9rem, transparent 9rem);
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-modal-content .moodlenet-circle-status.fail {
+  background: radial-gradient(circle, rgba(202, 49, 32, 0.1) 9rem, transparent 9rem);
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-modal-content .moodlenet-circle-status span {
+  display: block;
+  margin: auto;
+}
+.moodlenet-share-dialog .modal-body .moodlenet-share-modal-content .moodlenet-circle-status span.status-icon .icon {
+  font-size: 8rem;
+  width: auto;
+  margin: 0;
+}
+.moodlenet-share-dialog .modal-footer .moodlenet-share-to {
+  margin-right: auto;
 }
 
 body {
